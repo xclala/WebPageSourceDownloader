@@ -9,10 +9,10 @@ try:
             from os import getcwd
             path = getcwd()
             system(
-                f'wget -r --no-parent --reject "index.html*" {url} -P {path}')
+                f'wget -c -k -r --no-parent --reject "index.html*" {url} -P {path}')
         else:
             system(
-                f'wget -r --no-parent --reject "index.html*" {url} -P {savedPath}')
+                f'wget -c -k -r --no-parent --reject "index.html*" {url} -P {savedPath}')
     system("pause")
 except Exception as e:
     print(e)
