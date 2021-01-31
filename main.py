@@ -3,7 +3,7 @@ try:
     url = input("url:")
     savedPath = input("saved path:")
     if url == "":
-        print("请输入url!")
+        print("Please enter url!")
     else:
         if savedPath == "":
             from os import getcwd
